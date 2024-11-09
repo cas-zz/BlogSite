@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cassandra's Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+  </head>
+  <body>
+    <div class="background-image">
+        <img src="catandbf.gif" class="image1">
+        <img src="minbg.png" class="image2">
+    </div>
+    <nav id="desktop-nav">
+        <div class="logo">Cas' Blog</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home"> HOME</a></li>
+                <li><a href="#aboutme"> ABOUT ME</a></li>
+                <li><a href="#activities"> ACTIVITIES</a></li>
+                <li><a href="#hobbies"> HOBBIES</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamborger-nav">
+      <div class="logo"> Cas' Blog </div>
+      <div class="hamborger-menu">
+        <div class="hamborger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()"> HOME</a></li>
+          <li><a href="#aboutme" onclick="toggleMenu()"> ABOUT ME</a></li>
+          <li><a href="#activities" onclick="toggleMenu()"> ACTIVITIES</a></li>
+          <li><a href="#hobbies" onclick="toggleMenu()"> HOBBIES</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="home">
+          <div class="section__text">
+            <p class="section__text__p1">Bonjour! I am</p>
+            <h1 class="title">Ma. Reina Cassandra Gudalle</h1>
+            <p class="section__text__p2">Welcome to my Blog Website!</p>
+            <div id="socials-container">
+              <img src="facebook.png"
+                   alt="My Facebook Profile"
+                   class="icon"
+                   onclick="location.href='https://www.facebook.com/Ma.Cassandra.Gudalle/'"/>
+        
+              <img src="github.png"
+                   alt="My Github Profile"
+                   class="icon"
+                   onclick="location.href='https://github.com/cas-zz'"/>
+            </div>
+          </div>
+        </section>
+    </div>
+    <section id="aboutme">
+        <h2>About Me</h2>
+        <div class="aboutme-content">
+          <div class="section__pic-container">
+            <img src="profile.gif" alt="Profile Picture" />
+          </div>
+          <div class="text-content">
+            <p>
+              Hello! I'm Ma. Reina Cassandra Gudalle, a beginner in web development and programming. 
+              I am currently in my 3rd year at the Technological University of the Philippines, 
+              taking Bachelor of Science in Information Systems. I enjoy learning new skills and exploring my creativity.
+            </p>
+            <p>This blog contains things about me, some of my daily/weekly activities, and my hobbies.</p>
+            <p>
+              Facts about me: I love cats, especially my cat "Chimi". I love them for being independent yet clingy. 
+              I also love the color pink; it’s soothing to my eyes, and most of my belongings are pink.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <section id="activities">
+      <h2>Activities</h2>
+      <div class="acts-content">
+  
+  <p><font color="#CA955C">How I Ended Up in Information Systems</font></p>
+  <p>I am really into engineering or architecture course, so I tried to apply at my University
+    since it offers the course that I wanted and no tuition fees. As I tried to proceed to the application
+    I saw that there are no available slots anymore of the engineering or architecture course. Due to unavailability,
+ I tried to apply on BSCS or Computer Science. Unfortunately, I got waitlisted and suddenly received
+an e-mail that I got redirected to Information Systems. This is where my programming journey begins.</p>
+  
+  <p><font color="#CA955C">Challenges and Struggles</font></p>
+  <p>Learning programming was not easy in the beginning. I remember the first time I tried 
+    C, my code was full of errors, and I couldnt figure out what went wrong. I spent hours on 
+    one tiny issue only to realize I missed a semicolon. But those small victories, like successfully 
+    debugging my first error or making a button actually do something, kept me motivated. I also found 
+    some great resources like W3Schools, which broke down concepts in a way I could understand.</p>
+</div>
+</section>
+      <section id="hobbies">
+        <h2>Hobbies</h2>
+        <div class="hobbies-content">
+        <p><font color="#CA955C">Cooking</font></p>
+        <p>Whenever I have free time I will cook, I also try experimenting in cooking like mixing some few ingredients
+          if which tastes better. It’s a fun way to learn new techniques and keep things interesting in the kitchen
+        </p>
+      </div>
+      </section>
+      
+    <script src="script.js"></script>
+  </body>
+</html>

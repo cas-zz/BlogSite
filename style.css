@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Itim&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  /* border: rgb(243, 229, 231) solid 1px; */
+}
+body {
+  font-family: "Itim", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(241, 135, 135);
+}
+
+nav#desktop-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Aligns content to the left */
+  padding: 1rem;
+  position: absolute; /* Ensures nav stays at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Extends nav width across the page */
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #a4907c; /* Logo color */
+  margin-right: 2rem; /* Space between logo and nav links */
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none; /* Removes underline on hover */
+} /* Space between logo and nav links */
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links li a {
+  color: #76ba99;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.nav-links li a:hover {
+  color: #a4907c;
+  text-decoration: underline;
+}
+
+/* Hamborger menu */
+#hamborger-nav {
+  display: none;
+}
+
+.hamborger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamborger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 15px;
+  width: 30px;
+}
+
+.hamborger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: #76ba99;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+  color: #a4907c;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamborger-icon-open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamborger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamborger-icon span.first-child {
+  transform: none;
+}
+
+.hamborger-icon span.first-child {
+  opacity: 2;
+}
+
+.hamborger-icon span.first-child {
+  transform: none;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Video background */
+.background-image {
+  position: fixed; /* Fixes the background to the screen */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width of the viewport */
+  height: 100%; /* Full height of the viewport */
+  z-index: -1; /* Ensures it stays behind other content */
+  overflow: hidden; /* Prevents overflow */
+}
+
+.background-image img {
+  position: absolute; /* Positions the images inside the container */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure both images take up the full width */
+  height: 100%; /* Ensure both images take up the full height */
+  object-fit: cover; /* Makes sure images cover the container without distortion */
+}
+
+.background-image img:first-child {
+  z-index: 1; /* This will keep the first image (GIF) on top */
+}
+
+.background-image img:last-child {
+  z-index: 0; /* This keeps the second image (PNG) in the background */
+}
+
+#hamborger-nav .logo {
+  font-size: 2rem;
+  color: #a4907c;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-links li a {
+  text-decoration: none;
+  color: #76ba99;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-links li a:hover {
+  color: #a4907c;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+}
+
+section {
+  padding-top: 4vh;
+  height: 100vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 100vh; /* Take full viewport height */
+  text-align: center; /* Center text */
+  background: transparent;
+}
+
+.section__text__p1 {
+  font-size: 1.5rem; /* Larger font size for readability */
+  color: #a4907c;
+}
+.section__text__p2 {
+  font-size: 1.5rem; /* Larger font size for readability */
+  color: #a4907c;
+}
+
+.title {
+  font-size: 2.5rem; /* Increase font size for the title */
+  margin-top: 1rem; /* Space between "Hi, I am" and title */
+  color: #76ba99;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem; /* Space between title and social icons */
+}
+
+#socials-container img {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+/* General Section Styles */
+section {
+  padding: 4rem 2rem;
+  background-color: #f3f4f6; /* Light background for readability */
+  text-align: center;
+}
+
+
+
+/* Overall Styling for About Me Section */
+#aboutme {
+  background-color: #f1e5e7;
+  padding: 2rem;
+  max-width: 1000px; /* Restricts width for better layout control */
+  margin: 0 auto;
+}
+
+/* Center the Title */
+#aboutme h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #A4907C;
+  margin-bottom: 2rem;
+}
+
+/* Flex Container for Image and Text */
+.aboutme-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem; /* Space between image and text */
+  flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+}
+
+/* Image Container Styling */
+.section__pic-container {
+  flex: 0 0 200px; /* Fixed width for image container */
+}
+
+.section__pic-container img {
+  width: 100%; /* Full width of container */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Text Content Styling */
+.text-content {
+  flex: 1; /* Takes up remaining space */
+  text-align: left;
+}
+
+.text-content p {
+  color: #76BA99;
+  margin-bottom: 1rem;
+}
+
+#activities {
+  background-color: #f1e5e7;
+  padding: 2rem;
+  max-width: 1000px; /* Restricts width for better layout control */
+  margin: 0 auto;
+}
+#activities h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #A4907C;
+  margin-bottom: 2rem;
+}
+.acts-content p {
+  color: #76BA99;
+  margin-bottom: 1rem;
+}
+#hobbies {
+  background-color: #e5e7f1;
+}
+#hobbies h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #A4907C;
+  margin-bottom: 2rem;
+}
+.hobbies-content p {
+  color: #76BA99;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px){
+  .nav-links li a {
+    display: none; /* Hide the desktop nav on small screens */
+  }
+  
+}
+#aboutme,
+#activities,
+#hobbies {
+  background-color: rgba(255, 255, 255, 0.6); /* 60% opacity */
+}
